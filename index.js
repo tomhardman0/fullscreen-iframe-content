@@ -37,6 +37,7 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
 
   }
 
-  document.getElementsByTagName('html')[0].setAttribute('onresize', 'iframeResize();')
+  iframeResize();
+  document.getElementsByTagName('html')[0].setAttribute('onresize', 'iframeResize();');
 
 }
