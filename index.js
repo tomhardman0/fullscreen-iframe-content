@@ -24,9 +24,9 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
   iframe.getAttributeNode('width').value = '100%';
   iframe.getAttributeNode('height').value = '100%';
 
-  fullscreenContent()
-  window.on('resize', function() {
-  fullscreenContent()
-  })
+  // fullscreenContent()
+  // window.on('resize', function() {
+  // fullscreenContent()
+  // })
 
 }
