@@ -1,6 +1,6 @@
 {
   "name": "fullscreen-iframe-content",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ensures content of iFrame is fullscreen - i.e. A YouTube video can be used as a background video with no black bars vertically or horizontally.",
   "main": "index.js",
   "scripts": {
