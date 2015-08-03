@@ -37,7 +37,7 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
 
   }
 
-  window.on('load resize', function() {
+  window.bind('load resize', function() {
 
     iframeResize()
 
