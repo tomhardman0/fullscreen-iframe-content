@@ -1,0 +1,3 @@
+exports.fullscreenContent = function() {
+  
+}

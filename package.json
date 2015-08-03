@@ -1,0 +1,27 @@
+{
+  "name": "fullscreen-iframe-content",
+  "version": "1.0.0",
+  "description": "Ensures content of iFrame is fullscreen - i.e. A YouTube video can be used as a background video with no black bars vertically or horizontally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tomhardman0/fullscreen-iframe-content.git"
+  },
+  "keywords": [
+    "iframe",
+    "resize",
+    "dynamic",
+    "youtube",
+    "fullscreen",
+    "responsive"
+  ],
+  "author": "Tom Hardman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomhardman0/fullscreen-iframe-content/issues"
+  },
+  "homepage": "https://github.com/tomhardman0/fullscreen-iframe-content#readme"
+}
