@@ -19,8 +19,8 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
     height /= multiRatio
     }
 
-  container.style.height = height;
-  container.style.width = width;
+  container.style.height = height.toString() + 'px';
+  container.style.width = width.toString() + 'px';
   iframe.getAttributeNode('width').value = '100%';
   iframe.getAttributeNode('height').value = '100%';
 
