@@ -32,15 +32,11 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
     // Style container, parent, and iFrame
     container.style.height = height.toString() + 'px';
     container.style.width = width.toString() + 'px';
-    iframe.getAttributeNode('width').value = '100%';
-    iframe.getAttributeNode('height').value = '100%';
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('height', '100%');
 
   }
 
-  window.bind('load resize', function() {
-
-    iframeResize()
-
-  })
+  document.getElementsByTagName('html')[0].setAttribute('onresize', 'iframeResize();')
 
 }
