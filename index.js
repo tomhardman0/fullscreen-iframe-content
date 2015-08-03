@@ -11,7 +11,7 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
   container.style.transform = 'translate(-50%,-50%)';
 
 
-  var iframeResize = function(container, iframe, aspectX, aspectY) {
+  var iframeResize = function() {
 
     // Measure dimensions and calculate correct size
     var width = window.innerWidth
