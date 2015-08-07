@@ -1,6 +1,6 @@
 {
   "name": "fullscreen-iframe-content",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Ensure's the full content of an iframe, rather than the iframe itself, fills the screen. Great for background video using YouTube, Vimeo, etc.",
   "main": "index.js",
   "scripts": {
