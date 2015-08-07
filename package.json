@@ -1,0 +1,27 @@
+{
+  "name": "fullscreen-iframe-content",
+  "version": "1.0.0",
+  "description": "Ensure's the full content of an iframe, rather than the iframe itself, fills the screen. Great for background video using YouTube, Vimeo, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tomhardman0/fullscreen-iframe-content.git"
+  },
+  "keywords": [
+    "fullscreen",
+    "iframe",
+    "youtube",
+    "vimeo",
+    "background",
+    "aspect-ratio"
+  ],
+  "author": "Tom Hardman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomhardman0/fullscreen-iframe-content/issues"
+  },
+  "homepage": "https://github.com/tomhardman0/fullscreen-iframe-content#readme"
+}
