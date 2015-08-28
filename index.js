@@ -27,7 +27,7 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
     } else {
       width /= multiRatio
       height /= multiRatio
-      }
+    }
 
     // Style container, parent, and iFrame
     container.style.height = height.toString() + 'px';
@@ -40,13 +40,11 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
   if(window.attachEvent) {
     window.attachEvent('onresize', function() {
       iframeResize();
-      console.log('resizing')
     });
   }
   else if(window.addEventListener) {
     window.addEventListener('resize', function() {
       iframeResize();
-      console.log('resizing')
     }, true);
   }
 
