@@ -1,6 +1,6 @@
-# [Fullscreen iFrame Content](http://fullscreen-iframe.xyz/)
+# [Fullscreen iFrame Content](https://www.npmjs.com/package/fullscreen-iframe-content)
 
-Ensures the full content of an iframe, rather than the iframe itself, fills the screen. Great for background video using YouTube, Vimeo, etc.
+Ensures the full content of an iframe, rather than the iframe itself, fills the screen. Great for background video using YouTube, Vimeo, etc. [Available on NPM](https://www.npmjs.com/package/fullscreen-iframe-content)
 
 ## Implement
 
