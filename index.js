@@ -1,8 +1,8 @@
 module.exports = function fullscreenContent(container, iframe, aspectX, aspectY) {
 
   // Select DOM elements
-  let container = document.querySelectorAll(container)[0];
-  let iframe = document.querySelectorAll(iframe)[0];
+  const container = document.querySelectorAll(container)[0];
+  const iframe = document.querySelectorAll(iframe)[0];
 
   // Generic styles for container
   container.style.pointerEvents = 'none';
