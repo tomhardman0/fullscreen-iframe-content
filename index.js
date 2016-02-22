@@ -1,8 +1,8 @@
-exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
+module.exports = function fullscreenContent(container, iframe, aspectX, aspectY) {
 
   // Select DOM elements
-  var container = document.querySelectorAll(container)[0];
-  var iframe = document.querySelectorAll(iframe)[0];
+  let container = document.querySelectorAll(container)[0];
+  let iframe = document.querySelectorAll(iframe)[0];
 
   // Generic styles for container
   container.style.pointerEvents = 'none';
@@ -11,25 +11,25 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
   container.style.left = '50%';
   container.style.transform = 'translate(-50%,-50%)';
 
-  var iframeResize = function() {
+  let iframeResize = function() {
 
     // Measure dimensions and calculate correct size
-    var width = window.innerWidth
-    var height = window.innerHeight
-    var wide = aspectX / aspectY;
-    var aspect = width / height;
-    var multiRatio = wide / aspect
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let wide = aspectX / aspectY;
+    let aspect = width / height;
+    let multiRatio = wide / aspect
 
 
     if (multiRatio >= 1) {
-      width *= multiRatio
-      height *= multiRatio
+      width *= multiRatio;
+      height *= multiRatio;
     } else {
-      width /= multiRatio
-      height /= multiRatio
+      width /= multiRatio;
+      height /= multiRatio;
     }
 
-    // Style container, parent, and iFrame
+    // Style container, parent, and iframe
     container.style.height = height.toString() + 'px';
     container.style.width = width.toString() + 'px';
     iframe.setAttribute('width', '100%');
@@ -37,6 +37,7 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
 
   }
 
+  // call iframe resize on window resize
   if(window.attachEvent) {
     window.attachEvent('onresize', function() {
       iframeResize();
@@ -48,6 +49,7 @@ exports.fullscreenContent = function(container, iframe, aspectX, aspectY) {
     }, true);
   }
 
+  // Call on page load
   iframeResize();
 
 }
