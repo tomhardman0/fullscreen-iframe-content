@@ -18,7 +18,7 @@ module.exports = function fullscreenContent(container, iframe, aspectX, aspectY)
     let height = window.innerHeight;
     let wide = aspectX / aspectY;
     let aspect = width / height;
-    let multiRatio = wide / aspect
+    let multiRatio = wide / aspect;
 
 
     if (multiRatio >= 1) {
