@@ -39,14 +39,9 @@ module.exports = function fullscreenContent(container, iframe, aspectX, aspectY)
 
   // call iframe resize on window resize
   if(window.attachEvent) {
-    window.attachEvent('onresize', function() {
-      iframeResize();
-    });
-  }
-  else if(window.addEventListener) {
-    window.addEventListener('resize', function() {
-      iframeResize();
-    }, true);
+    window.attachEvent('onresize', iframeResize);
+  } else if(window.addEventListener) {
+    window.addEventListener('resize', iframeResize, true);
   }
 
   // Call on page load
